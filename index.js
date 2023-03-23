@@ -151,7 +151,7 @@ function generator() {
         if (!fs.existsSync(DIST_DIR)) {
             fs.mkdirSync(DIST_DIR);
         }
-        fs.writeFileSync(distPath, render(teamMembers), 'utf-8');
+        fs.writeFileSync(distPath, render(teamMember), 'utf-8');
     }
 
     createManager();
